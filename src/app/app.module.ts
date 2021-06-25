@@ -1,0 +1,33 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { AdditemsinbasketComponent } from './additemsinbasket/additemsinbasket.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewitemsbycustComponent } from './viewitemsbycust/viewitemsbycust.component';
+import { ViewproductsbyproductIdComponent } from './viewproductsbyproduct-id/viewproductsbyproduct-id.component';
+import { ViewproductsbycategorynameComponent } from './viewproductsbycategoryname/viewproductsbycategoryname.component';
+import { CreateorderComponent } from './createorder/createorder.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AdditemsinbasketComponent,
+    ViewitemsbycustComponent,
+    ViewproductsbyproductIdComponent,
+    ViewproductsbycategorynameComponent,
+    CreateorderComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
